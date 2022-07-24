@@ -1,0 +1,1 @@
+part 'value_manager.dart';
