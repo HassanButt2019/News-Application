@@ -1,6 +1,6 @@
 on: push
 name: Test, Build and Release apk
-run: echo "{name}={value}" >> $GITHUB_STATE
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 jobs:
   build:
     name: Build APK
