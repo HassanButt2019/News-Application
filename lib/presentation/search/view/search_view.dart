@@ -128,7 +128,7 @@ class _SearchScreenState extends State<SearchScreen> {
       height: size.height,
       width: size.width,
       child: Center(
-        child: Text("No News Yet , Please Search For News",style: TextStyle(color: ColorConstants.blackTextColor , fontSize: FontSize.s16 , fontWeight: FontWeight.bold),),
+        child: Text("Not Available , Please Search For Customers",style: TextStyle(color: ColorConstants.blackTextColor , fontSize: FontSize.s16 , fontWeight: FontWeight.bold),),
       ),
     );
   }
