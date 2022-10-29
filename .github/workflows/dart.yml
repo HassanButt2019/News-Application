@@ -1,4 +1,7 @@
-on: push
+on:
+  push:
+    tags:
+      - v*
 name: Test, Build and Release apk
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 jobs:
