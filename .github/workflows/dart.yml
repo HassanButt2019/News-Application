@@ -4,13 +4,12 @@ run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 jobs:
   build:
     name: Build APK
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
       - uses: subosito/flutter-action@v2
         with:
-           flutter-version: '3.0.5'
-            channel: 'stable'
+          channel: 'stable'
       - run: flutter pub get
       - run: flutter test
       - run: flutter build apk --debug --split-per-abi
