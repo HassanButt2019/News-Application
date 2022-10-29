@@ -28,15 +28,20 @@ class _SplashScreenState extends State<SplashScreen> {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Expanded(
-            child: Lottie.asset(
-              'assets/logo.json',
-              height: 400,
-
-
-              fit: BoxFit.fill,
-            ),
+          Lottie.asset(
+            'assets/logo.json',
+            height: 400,
+            fit: BoxFit.fill,
           ),
+      Text(
+        "The Gents Tailor",
+        maxLines: 4,
+        overflow: TextOverflow.ellipsis,
+        textAlign: TextAlign.start,
+        style: TextStyle(color: Colors.black, fontSize: 30 , fontWeight: FontWeightManager.bold),
+      )
+
+
         ],),
 
     );

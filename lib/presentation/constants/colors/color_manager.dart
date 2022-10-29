@@ -15,7 +15,7 @@ class ColorConstants{
   static Color whiteTextColor = HexColor.fromHex("#FFFFFF");
   static Color blackTextColor = HexColor.fromHex("#000000");
   static Color error = HexColor.fromHex("#e61f34"); // red color
-  static Color iconColor = HexColor.fromHex("#3BBCF8");
+  static Color iconColor = HexColor.fromHex("#000000");
 
 
 }

@@ -18,21 +18,11 @@ class NewsWidget extends StatelessWidget {
           color: ColorConstants.primary,
           child: Padding(
             padding:  EdgeInsets.only(left:AppPadding.p20,right: AppPadding.p20),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                const SizedBox(height: AppSpaceSize.s10,),
-                AppText(text:news.author=="null"?"Unknown Author": news.author.toString() ,color: ColorConstants.blackTextColor,size: FontSize.s16,),
-                const SizedBox(height: AppSpaceSize.s5,),
-                news.publishedAt!=null? Text( timeago.format(DateTime.parse(news.publishedAt.toString())) ,style:TextStyle(color: ColorConstants.grey,fontSize: FontSize.s12,)):Container(),
-                const SizedBox(height: AppSpaceSize.s10,),
-                AppText(text: news.title.toString(),color: ColorConstants.blackTextColor,size: FontSize.s20,),
-                AppText(text: "Source: ${news.source.toString()}",color: ColorConstants.darkPrimary.withOpacity(0.9),size: FontSize.s20,),
-                const SizedBox(height: AppSpaceSize.s10,),
-                CustomeImageWidget(image: news.image,),
-                const SizedBox(height: AppSpaceSize.s10,),
-              ],
+            child: ListTile(
+              trailing: Icon(Icons.arrow_forward_ios , color: Colors.black , size: 20,),
+              leading:CustomeImageWidget(name: news.author=="null"?"Unknown Author": news.author.toString() ,),
+              title:AppText(text:news.author=="null"?"Unknown Author": news.author.toString() ,color: ColorConstants.blackTextColor,size: FontSize.s16,),
+              subtitle: Text( "03343xxxxx",style:TextStyle(color: ColorConstants.grey,fontSize: FontSize.s12,)),
             ),
           ),
 

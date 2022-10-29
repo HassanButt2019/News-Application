@@ -8,6 +8,7 @@ import 'package:news_application/bloc/news_bloc/states/news_loaded.dart';
 import 'package:news_application/bloc/news_bloc/states/news_loading.dart';
 import 'package:news_application/bloc/news_bloc/states/news_state.dart';
 import 'package:news_application/data/repository/news_repository.dart';
+import 'package:news_application/presentation/add_customer/view/add_customer.dart';
 import 'package:news_application/presentation/constants/colors/colors.dart';
 import 'package:news_application/presentation/home/widgets/widgets.dart';
 import 'package:news_application/presentation/shared_widgets/shared_widgets.dart';
